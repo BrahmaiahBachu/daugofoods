@@ -26,6 +26,35 @@
 <link href="assets/css/color.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
+<style>
+    .card {
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+  font-family: sans-serif;
+  color: #1e3a8a; /* blue-900 */
+  margin: 0 10px;
+}
+.card p{
+    padding: 0.5vw 0;
+    border-top: 2px solid #cccccc;
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  /* object-fit: cover; */
+  transition: transform 0.5s;
+}
+.card:hover img {
+  transform: rotate(180deg);
+}
+</style>
 
 </head>
 
@@ -52,7 +81,7 @@
                         <div class="sidebar-info-contents">
                             <div class="content-inner">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/images/logo-2.png" alt="" /></a>
+                                    <a href="index.html"><img src="assets/additionalAssets/logo.png" alt="" style="width: 100px;height: 100px;"/></a>
                                 </div>
                                 <div class="content-box">
                                     <h4>About Us</h4>
@@ -61,8 +90,9 @@
                                 </div>
                                 <div class="contact-info">
                                     <h4>Contact Info</h4>
-                                    <ul>
-                                        <li>Chicago 12, Melborne City, USA</li>
+                                     <ul>
+                                        <li>1-4-27/41, Padmashali Colony,<br />
+                                            Musheerabad, Hyderabad-20. T.S. INDIA</li>
                                         <li><a href="tel:+8801682648101">+88 01682648101</a></li>
                                         <li><a href="mailto:info@example.com">info@example.com</a></li>
                                     </ul>
@@ -90,7 +120,8 @@
                         <ul class="info-list clearfix">
                             <li>
                                 <i class="flaticon-location-pin"></i>
-                                Padmashali Colony, Musheerabad, Hyderabad
+                                1-4-27/41, Padmashali Colony,<br />
+Musheerabad, Hyderabad-20. T.S. INDIA
                             </li>
                             <li>
                                 <i class="flaticon-envelope"></i>
@@ -108,7 +139,7 @@
                 <div class="auto-container">
                     <div class="outer-box clearfix">
                         <div class="logo-box">
-                            <figure class="logo"><a href="#"><img src="assets/additionalAssets/logo.png" style="height: 100px; width: 100px;" alt=""></a></figure>
+                            <figure class="logo"><a href="index.html"><img src="assets/additionalAssets/logo.png" style="height: 100px; width: 100px;" alt=""></a></figure>
                         </div>
                         <div class="menu-area pull-right">
                             <!--Mobile Navigation Toggler-->
@@ -267,14 +298,271 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content-two">
+                                <!-- <div class="content-two">
                                     <div class="text">
                                         <h3>How to select good meat?</h3>
                                         <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod teLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
+                                </div> -->
+                            </div>
+                            <div class="inner-box">
+                                <div class="col-12" style="display: flex;">
+                                    
+                                    <div class="col-4 card">
+                                         <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Top-Side.jpg" alt="">
+                                        </a>
+                                        <p>Top Side</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Silver-Side.jpg" alt="">
+                                        </a>
+                                        <p>Silver Side</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Thick-f.jpg" alt="">
+                                        </a>
+                                        <p>Thick Flank (Knuckle)</p>
+                                    </div>
+
+                                </div>
+                                 <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                       <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Rump-Stick.jpg" alt="">
+                                        </a>
+                                        <p>Rump Stick</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Tender-Loin.jpg" alt="">
+                                        </a>
+                                        <p>Tender Loin</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Silver-Side.jpg" alt="">
+                                        </a>
+                                        <p>Striploin</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Rump-Stick.jpg" alt="">
+                                        </a>
+                                        <p>Eyeround</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Blade.jpg" alt="">
+                                        </a>
+                                        <p>Blade</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Chuck-Tendor.jpg" alt="">
+                                        </a>
+                                        <p>Chuck Tendor</p>
+                                    </div>
+
+                                </div>
+
+                                 <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Cube Roll.jpg" alt="">
+                                        </a>
+                                        <p>Cube Roll</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Brisket NE.jpg" alt="">
+                                        </a>
+                                        <p>Brisket NE</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Brisket PE.jpg" alt="">
+                                        </a>
+                                        <p>Brisket PE</p>
+                                    </div>
+
+                                </div>
+
+                                 <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Shin Shank.jpg" alt="">
+                                        </a>
+                                        <p>Shin Shank</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Flank.jpg" alt="">
+                                        </a>
+                                        <p>Flank</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Brisket PE.jpg" alt="">
+                                        </a>
+                                        <p>Neck</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Slicesjpg.jpg" alt="">
+                                        </a>
+                                        <p>Slices</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Fore Quarter.jpg" alt="">
+                                        </a>
+                                        <p>Fore Quarter</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Triming.jpg" alt="">
+                                        </a>
+                                        <p>Triming</p>
+                                    </div>
+
+                                </div>
+
+                                 <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Cheek Meat.jpg" alt="">
+                                        </a>
+                                        <p>Cheek Meat</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Tongue.jpg" alt="">
+                                        </a>
+                                        <p>Tongue</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Tail.jpg" alt="">
+                                        </a>
+                                        <p>Tail</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Heart.jpg" alt="">
+                                        </a>
+                                        <p>Heart</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Hock Tendon.jpg" alt="">
+                                        </a>
+                                        <p>Hock Tendon</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Knee Tendon.jpg" alt="">
+                                        </a>
+                                        <p>Knee Tendon</p>
+                                    </div>
+
+                                </div>
+
+                                 <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Tripe.jpg" alt="">
+                                        </a>
+                                        <p>Tripe</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Honeycomb.jpg" alt="">
+                                        </a>
+                                        <p>Honeycomb</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Omasum.jpg" alt="">
+                                        </a>
+                                        <p>Omasum</p>
+                                    </div>
+
+                                </div>
+
+                                 <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Liver.jpg" alt="">
+                                        </a>
+                                        <p>Liver</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Kidney.jpg" alt="">
+                                        </a>
+                                        <p>Kidney</p>
+                                    </div>
+
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Paddy Wack.jpg" alt="">
+                                        </a>
+                                        <p>Paddy Wack</p>
+                                    </div>
+
+                                </div>
+
+                                 <div class="col-12" style="display: flex; margin-top: 1vw;">
+                                    <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Aorta.jpg" alt="">
+                                        </a>
+                                        <p>Aorta</p>
+                                    </div>
+
+                                     <div class="col-4 card">
+                                        <a href="Buffalo-meat.html">
+                                        <img src="assets/meat-img/Brain.jpg" alt="">
+                                        </a>
+                                        <p>Brain</p>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="post-share-option clearfix">
+                            <!-- <div class="post-share-option clearfix">
                                 <ul class="post-share pull-left clearfix">
                                     <li><h6>Share this post:</h6></li>
                                     <li><a href="blog-details.html"><i class="fab fa-facebook-f"></i></a></li>
@@ -354,7 +642,7 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-12 col-sm-12 sidebar-side">
@@ -413,7 +701,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="sidebar-widget post-widget">
+                            <!-- <div class="sidebar-widget post-widget">
                                 <div class="widget-title">
                                     <h3>Popular Feeds</h3>
                                 </div>
@@ -497,7 +785,7 @@
                                         <li><figure class="image-box"><a href="blog.html"><img src="assets/images/news/instagram-6.jpg" alt=""></a></figure></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -531,7 +819,8 @@
                                         <li>
                                             <i class="flaticon-maps-and-flags"></i>
                                             <p>Address</p>
-                                            <h5>Padmashali Colony, Musheerabad, Hyderabad</h5>
+                                            <h5>1-4-27/41, Padmashali Colony,<br />
+Musheerabad, Hyderabad-20. T.S. INDIA</h5>
                                         </li>
                                     </ul>
                                     <ul class="social-links clearfix"> 
