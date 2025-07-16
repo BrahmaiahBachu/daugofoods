@@ -32,7 +32,7 @@
     <link href="assets/css/responsive.css" rel="stylesheet">
     <style>
     .card {
-  width: 200px;
+  width: 250px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   border-radius: 8px;
   overflow: hidden;
@@ -58,6 +58,26 @@
 .card:hover img {
   transform: rotate(180deg);
 }
+  .highlight {
+       border: 2px solid #1d4ed8;  
+      box-shadow: 0 0 12px rgba(37, 99, 235, 0.15);
+      background-color: #eaf4fc;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15); /* blue-600 */
+  border-radius: 10px;
+    }
+    .category-list li{
+        cursor: pointer;
+    }
+@media (max-width: 767px) {
+            .inner-box .col-12 {
+                flex-direction: column !important;
+            }
+
+            .inner-box .col-12 .card{
+                width: 100% !important;
+                margin-bottom: 1.5vw;
+            }
+        }
 </style>
 
 </head>
@@ -138,7 +158,7 @@ Musheerabad, Hyderabad-20. T.S. INDIA
                             </li>
                             <li class="phone">
                                 <i class="flaticon-dial"></i>
-                                <a href="ph:+919849525712">+91 9849525712</a>
+                                <a href="ph:+919030327350">+91 9030327350</a>
                             </li>
                         </ul>
                     </div>
@@ -167,6 +187,7 @@ Musheerabad, Hyderabad-20. T.S. INDIA
                                             <ul>
                                                 <li><a href="Buffalo-meat.html">Buffalo Meat & Offals</a></li>
                                                 <li><a href="sheep-goat-meat.html">Sheep and Goat Meat</a></li>
+                                                <li><a href="fruits-vegetables.html">Fruits & Vegetables</a></li>
                                                 <!-- <li><a href="#">Meat Preparation</a></li>
                                                 <li><a href="#">Meat Packaging</a></li>
                                                 <li><a href="#">Online Ordering</a></li>
@@ -242,7 +263,7 @@ Musheerabad, Hyderabad-20. T.S. INDIA
                     <h4>Contact Info</h4>
                     <ul>
                         <li>1-4-27-71/41, Padmashali Colony, Musheerabad, Hyderabad-500020</li>
-                        <li><a href="ph:+919849525712">+91 9849525712</a></li>
+                        <li><a href="ph:+919030327350">+91 9030327350</a></li>
                         <li><a href="mailto:duagofoods@gmail.com">duagofoods@gmail.com</a></li>
                     </ul>
                 </div>
@@ -335,14 +356,14 @@ Musheerabad, Hyderabad-20. T.S. INDIA
                                 <div class="inner-box">
                                     <div class="col-12" style="display: flex;margin-top: 1.5vw;">
 
-                                        <div class="col-4 card">
+                                        <div class="card" id="Mutton">
                                             <a href="sheep-goat-meat.html">
                                                 <img src="assets/meat-img/Mutton Cubes.jpg" alt="">
                                             </a>
                                             <p>Mutton Cubes</p>
                                         </div>
 
-                                        <div class="col-4 card">
+                                        <div class="card" id="Sheep">
                                             <a href="sheep-goat-meat.html">
                                                 <img src="assets/meat-img/Sheep & Goat.jpg" alt="">
                                             </a>
@@ -452,9 +473,9 @@ Musheerabad, Hyderabad-20. T.S. INDIA
                                 </div>
                                 <div class="widget-content">
                                     <ul class="category-list clearfix">
-                                        <li><i class="flaticon-right"></i><a href="blog-details.html">Mutton Cubes</a>
+                                        <li onclick="highlightCard('Mutton')"><i class="flaticon-right"></i>Mutton Cubes
                                         </li>
-                                        <li><i class="flaticon-right"></i><a href="blog-details.html">Sheep & Goat </a>
+                                        <li onclick="highlightCard('Sheep')"><i class="flaticon-right"></i>Sheep & Goat
                                         </li>
 
                                     </ul>
@@ -575,8 +596,13 @@ Musheerabad, Hyderabad-20. T.S. INDIA
                                         <li>
                                             <i class="flaticon-phone"></i>
                                             <p>Call Us</p>
-                                            <h5><a href="ph:+919849525712">+91 9849525712</a></h5>
+                                            <h5><a href="ph:+919030327350">+91 9030327350</a></h5>
                                         </li>
+                                           <li>
+                                            <i class="flaticon-envelope"></i>
+                                            <h5><a href="mailto:duagofoods@gmail.com">duagofoods@gmail.com</a></h5>
+                                            
+                                         </li>
                                         <li>
                                             <i class="flaticon-maps-and-flags"></i>
                                             <p>Address</p>
@@ -652,6 +678,17 @@ Musheerabad, Hyderabad-20. T.S. INDIA</h5>
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
+    <script>
+  function highlightCard(id) {
+    document.querySelectorAll('.card').forEach(card => {
+      card.classList.remove('highlight');
+    });
+
+    const card = document.getElementById(id);
+    card.classList.add('highlight');
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+</script>
 
 </body><!-- End of .page_wrapper -->
 
