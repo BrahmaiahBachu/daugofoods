@@ -5645,3 +5645,16 @@ div#mCSB_1_container{
 .mt-0{
   margin-top: 0px !important;
 }
+.logo-box .logo{
+  position: relative;
+  top: -5vw;
+}
+.footer-logo a{
+  height: 100px;
+    display: block;
+    position: relative;
+    top: -100px;
+}
+.footer-logo a img{
+  height: unset !important;
+}
