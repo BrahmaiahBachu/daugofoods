@@ -519,8 +519,15 @@ img {
 
 .header-upper .outer-box .logo-box{
   position: absolute;
-  left: 0px;
-  top: -50px;
+  /* left: 0px;
+  top: -50px; */
+      left: -50px;
+    top: -100px;
+}
+@media only screen and (max-width: 991px) {
+  .header-upper .outer-box .logo-box{
+    left: 0 !important;
+  }
 }
 
 .main-header .menu-right-content{
