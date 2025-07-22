@@ -538,7 +538,30 @@ img {
     width: 200px !important;
   }
 }
+.whatsapp-container a img{
+  position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    background: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.whatsapp-container a img:hover {
+  color: #128C7E;
+  transform: scale(1.2) rotate(5deg);
+  animation: bounce 0.5s;
+}
 
+/* Bounce Keyframe */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-5px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
 .main-header .menu-right-content{
   position: relative;
   margin-left: 75px;

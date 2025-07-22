@@ -2,83 +2,89 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<title>DaugoFoods</title>
+    <title>DaugoFoods</title>
 
-<!-- Fav Icon -->
-<link rel="icon" href="assets/additionalAssets/logo.png" type="image/x-icon">
+    <!-- Fav Icon -->
+    <link rel="icon" href="assets/additionalAssets/logo.png" type="image/x-icon">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        rel="stylesheet">
 
-<!-- Stylesheets -->
-<link href="assets/css/font-awesome-all.css" rel="stylesheet">
-<link href="assets/css/flaticon.css" rel="stylesheet">
-<link href="assets/css/owl.css" rel="stylesheet">
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
-<link href="assets/css/animate.css" rel="stylesheet">
-<link href="assets/css/color.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/responsive.css" rel="stylesheet">
- <style>
-         .contact-form {
-      /* background-color: #1a1a1a; */
-      /* padding: 20px; */
-      /* border-radius: 8px; */
-      width: 350px;
-      color: white;
-    }
+    <!-- Stylesheets -->
+    <link href="assets/css/font-awesome-all.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/owl.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/color.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <style>
+        .contact-form {
+            /* background-color: #1a1a1a; */
+            /* padding: 20px; */
+            /* border-radius: 8px; */
+            width: 350px;
+            color: white;
+        }
 
-    .contact-form h2 {
-      margin-bottom: 20px;
-    }
-    #contactForm h2{
-        color: #ffffff;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
 
-    .contact-form textarea {
-      resize: none;
-      height: 100px;
-    }
+        #contactForm h2 {
+            color: #ffffff;
+        }
 
-    .contact-form .captcha-box {
-      background-color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
 
-    .contact-form button {
-      background-color: #88c057;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    
+        .contact-form textarea {
+            resize: none;
+            height: 100px;
+        }
 
-    .error {
-      color: #ff6b6b;
-      font-size: 14px;
-      margin: -10px 0 10px 0;
-      display: block;
-    }
-    .card {
+        .contact-form .captcha-box {
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .contact-form button {
+            background-color: #88c057;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+
+        .error {
+            color: #ff6b6b;
+            font-size: 14px;
+            margin: -10px 0 10px 0;
+            display: block;
+        }
+
+        .card {
             /* width: 250px; */
             height: 300px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -91,19 +97,21 @@
             /* blue-900 */
             margin: 0 10px;
         }
-        .card a{
-                height: 250px;
-                padding: 25px;
+
+        .card a {
+            height: 250px;
+            padding: 25px;
         }
-        
+
         .card p {
             padding: 0.5vw 0;
             font-weight: bold;
             font-size: 2vw;
             /* border-top: 2px solid #cccccc; */
         }
-        .card p:hover{
-              transform: scale(1.2);
+
+        .card p:hover {
+            transform: scale(1.2);
             color: #27ae60
         }
 
@@ -127,6 +135,7 @@
 
 
 <!-- page wrapper -->
+
 <body>
 
     <div class="boxed_wrapper ltr">
@@ -153,22 +162,26 @@
                                 </div>
                                 <div class="content-box">
                                     <h4>About Us</h4>
-                                   <p>
-                                        <b>Duago Foods Pvt Ltd</b>, headquartered in Hyderabad, India, is a leading merchant exporter
+                                    <p>
+                                        <b>Duago Foods Pvt Ltd</b>, headquartered in Hyderabad, India, is a leading
+                                        merchant exporter
                                         known for delivering top-tier agri-based products across global markets. We
-                                        specialize in the export of premium-quality Buffalo Meat & Offals, Sheep & Goat Meat, Fruits & Vegetables. Our
+                                        specialize in the export of premium-quality Buffalo Meat & Offals, Sheep & Goat
+                                        Meat, Fruits & Vegetables. Our
                                         commitment lies in supplying consistent quality, timely delivery,
                                         and tailored solutions that meet the specific needs of each client.
                                     </p>
                                     <p>
-                                        With years of industry expertise, <b>Duago Foods Pvt Ltd</b> has built a strong reputation for
+                                        With years of industry expertise, <b>Duago Foods Pvt Ltd</b> has built a strong
+                                        reputation for
                                         reliability and excellence in international trade. Our team of seasoned
                                         professionals works hand-in-hand with clients to ensure their expectations are
                                         met with precision and care. Every export order is handled with a deep
                                         understanding of global quality standards and logistical excellence.
                                     </p>
                                     <p>
-                                        At <b>Duago Foods Pvt Ltd</b>, we uphold the highest standards in sourcing and operations. We
+                                        At <b>Duago Foods Pvt Ltd</b>, we uphold the highest standards in sourcing and
+                                        operations. We
                                         partner with trusted farmers and suppliers who align with our vision for
                                         quality, hygiene, and sustainability. Our infrastructure includes modern
                                         facilities equipped with advanced handling and packaging technologies to retain
@@ -181,7 +194,8 @@
                                         packaged to maintain its nutritional value and shelf life.
                                     </p>
                                     <p>
-                                        As one of India’s trusted merchant exporters, <b>Duago Foods Pvt Ltd</b> is dedicated to
+                                        As one of India’s trusted merchant exporters, <b>Duago Foods Pvt Ltd</b> is
+                                        dedicated to
                                         offering exceptional products backed by dependable service. Whether it’s bulk
                                         volumes or customized orders, we’re equipped to meet global demands with
                                         unmatched efficiency.
@@ -189,17 +203,17 @@
                                     <!-- <a href="about.html" class="theme-btn">About Us<i
                                             class="fas fa-long-arrow-alt-right"></i></a> -->
                                 </div>
-                               <div class="contact-info">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li>
-                            1-4-27/41, Padmashali Colony,<br />
-                            Musheerabad, Hyderabad-20. T.S. INDIA
-                        </li>
-                        <li><a href="ph:+919030327350">+91 9030327350</a></li>
-                        <li><a href="mailto:duagofoods@gmail.com">duagofoods@gmail.com</a></li>
-                    </ul>
-                </div>
+                                <div class="contact-info">
+                                    <h4>Contact Info</h4>
+                                    <ul>
+                                        <li>
+                                            1-4-27/41, Padmashali Colony,<br />
+                                            Musheerabad, Hyderabad-20. T.S. INDIA
+                                        </li>
+                                        <li><a href="ph:+919030327350">+91 9030327350</a></li>
+                                        <li><a href="mailto:duagofoods@gmail.com">duagofoods@gmail.com</a></li>
+                                    </ul>
+                                </div>
                                 <ul class="social-box">
                                     <li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
                                     <li class="twitter"><a href="#" class="fab fa-twitter"></a></li>
@@ -242,7 +256,8 @@
                 <div class="auto-container">
                     <div class="outer-box clearfix">
                         <div class="logo-box">
-                            <figure class="logo"><a href="index.html"><img src="assets/additionalAssets/logo.png" style=" width: 300px;" alt=""></a></figure>
+                            <figure class="logo"><a href="index.html"><img src="assets/additionalAssets/logo.png"
+                                        style=" width: 300px;" alt=""></a></figure>
                         </div>
                         <div class="menu-area pull-right">
                             <!--Mobile Navigation Toggler-->
@@ -254,13 +269,13 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li><a href="index.html">Home</a></li> 
-                                        <li><a href="about.html">About us</a></li> 
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About us</a></li>
                                         <li class="dropdown"><a href="#">Products</a>
                                             <ul>
                                                 <li><a href="Buffalo-meat.html">Buffalo Meat & Offals</a></li>
                                                 <li><a href="sheep-goat-meat.html">Sheep & Goat Meat</a></li>
-                                                 <li><a href="fruits-vegetables.html">Fruits & Vegetables</a></li>
+                                                <li><a href="fruits-vegetables.html">Fruits & Vegetables</a></li>
                                                 <!-- <li><a href="#">Meat Preparation</a></li>
                                                 <li><a href="#">Meat Packaging</a></li>
                                                 <li><a href="#">Online Ordering</a></li>
@@ -270,7 +285,7 @@
                                         <!-- <li><a href="#">Our Brands</a></li> -->
                                         <li><a href="service.html">Services</a></li>
                                         <!-- <li><a href="#">Gallery</a></li> -->
-                                        <li><a href="contact.html">Contact Us</a></li>             
+                                        <li><a href="contact.html">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -309,7 +324,8 @@
             <div class="sticky-header">
                 <div class="auto-container">
                     <div class="outer-box clearfix">
-                        <figure class="logo-box pull-left"><a href="#"><img src="assets/additionalAssets/logo.png" style="width: 200px;" alt=""></a></figure>
+                        <figure class="logo-box pull-left"><a href="#"><img src="assets/additionalAssets/logo.png"
+                                    style="width: 200px;" alt=""></a></figure>
                         <div class="menu-area pull-right">
                             <nav class="main-menu clearfix">
                                 <!--Keep This Empty / Menu will come through Javascript-->
@@ -325,10 +341,12 @@
         <div class="mobile-menu">
             <div class="menu-backdrop"></div>
             <div class="close-btn"><i class="fas fa-times"></i></div>
-            
+
             <nav class="menu-box">
-                <div class="nav-logo"><a href="#"><img src="assets/additionalAssets/logo.png" width="100" alt="" title=""></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                <div class="nav-logo"><a href="#"><img src="assets/additionalAssets/logo.png" width="100" alt=""
+                            title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
                 <div class="contact-info">
                     <h4>Contact Info</h4>
                     <ul>
@@ -349,7 +367,7 @@
             </nav>
         </div><!-- End Mobile Menu -->
 
-        
+
         <!-- main-slider -->
         <section class="main-slider">
             <div class="main-slider-carousel owl-theme owl-carousel owl-dots-none">
@@ -360,9 +378,10 @@
                             <h1>Fresh, Safe Quality Meats</h1>
                             <!-- <p>Food that matters - to you, to farmers and to the planet we all share.</p> -->
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn">Contact Us<i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="contact.html" class="theme-btn">Contact Us<i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
                 <div class="slide-item">
@@ -372,9 +391,10 @@
                             <h1>Fresh, Safe Quality Meats</h1>
                             <!-- <p>Food that matters - to you, to farmers and to the planet we all share.</p> -->
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn">Contact Us<i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="contact.html" class="theme-btn">Contact Us<i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="slide-item">
@@ -384,9 +404,10 @@
                             <h1>Fresh, Safe Quality Meats</h1>
                             <!-- <p>Food that matters - to you, to farmers and to the planet we all share.</p> -->
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn">Contact Us<i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="contact.html" class="theme-btn">Contact Us<i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -446,7 +467,7 @@
             </div>
         </section> -->
         <!-- clients-section end -->
-      <!-- about-style-two -->
+        <!-- about-style-two -->
         <section class="about-style-two">
             <div class="auto-container">
                 <div class="row align-items-center clearfix">
@@ -459,23 +480,27 @@
                                 </div>
                                 <div class="text">
                                     <div class="content-box">
-                                    <!-- <h4>About Us</h4> -->
-                                    <p>
-                                        <b>Duago Foods Pvt Ltd</b>, headquartered in Hyderabad, India, is a leading merchant exporter
-                                        known for delivering top-tier agri-based products across global markets. We
-                                        specialize in the export of premium-quality Buffalo Meat & Offals and Sheep & Goat Meat and Fruits & Vegetables. Our
-                                        commitment lies in supplying consistent quality, timely delivery,
-                                        and tailored solutions that meet the specific needs of each client.
-                                    </p>
-                                    <p>
-                                        With years of industry expertise, <b>Duago Foods Pvt Ltd</b> has built a strong reputation for
-                                        reliability and excellence in international trade. Our team of seasoned
-                                        professionals works hand-in-hand with clients to ensure their expectations are
-                                        met with precision and care. Every export order is handled with a deep
-                                        understanding of global quality standards and logistical excellence.
-                                    </p>
-                                   
-                                </div>
+                                        <!-- <h4>About Us</h4> -->
+                                        <p>
+                                            <b>Duago Foods Pvt Ltd</b>, headquartered in Hyderabad, India, is a leading
+                                            merchant exporter
+                                            known for delivering top-tier agri-based products across global markets. We
+                                            specialize in the export of premium-quality Buffalo Meat & Offals and Sheep
+                                            & Goat Meat and Fruits & Vegetables. Our
+                                            commitment lies in supplying consistent quality, timely delivery,
+                                            and tailored solutions that meet the specific needs of each client.
+                                        </p>
+                                        <p>
+                                            With years of industry expertise, <b>Duago Foods Pvt Ltd</b> has built a
+                                            strong reputation for
+                                            reliability and excellence in international trade. Our team of seasoned
+                                            professionals works hand-in-hand with clients to ensure their expectations
+                                            are
+                                            met with precision and care. Every export order is handled with a deep
+                                            understanding of global quality standards and logistical excellence.
+                                        </p>
+
+                                    </div>
                                 </div>
                                 <!-- <ul class="list clearfix">
                                     <li>
@@ -515,26 +540,27 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 my-3">
-                         <p>
-                                        At <b>Duago Foods Pvt Ltd</b>, we uphold the highest standards in sourcing and operations. We
-                                        partner with trusted farmers and suppliers who align with our vision for
-                                        quality, hygiene, and sustainability. Our infrastructure includes modern
-                                        facilities equipped with advanced handling and packaging technologies to retain
-                                        product freshness and integrity throughout the supply chain.
-                                    </p>
-                                    <p>
-                                        We recognize that our customers value quality above all else — and that’s why
-                                        we’ve implemented rigorous quality assurance checks at every stage. From
-                                        sourcing to dispatch, every product is thoroughly inspected and carefully
-                                        packaged to maintain its nutritional value and shelf life.
-                                    </p>
-                                    <p>
-                                        As one of India’s trusted merchant exporters, <b>Duago Foods Pvt Ltd</b> is dedicated to
-                                        offering exceptional products backed by dependable service. Whether it’s bulk
-                                        volumes or customized orders, we’re equipped to meet global demands with
-                                        unmatched efficiency.
-                                    </p>
-                                    <!-- <a href="about.html" class="theme-btn my-2">About Us<i
+                        <p>
+                            At <b>Duago Foods Pvt Ltd</b>, we uphold the highest standards in sourcing and operations.
+                            We
+                            partner with trusted farmers and suppliers who align with our vision for
+                            quality, hygiene, and sustainability. Our infrastructure includes modern
+                            facilities equipped with advanced handling and packaging technologies to retain
+                            product freshness and integrity throughout the supply chain.
+                        </p>
+                        <p>
+                            We recognize that our customers value quality above all else — and that’s why
+                            we’ve implemented rigorous quality assurance checks at every stage. From
+                            sourcing to dispatch, every product is thoroughly inspected and carefully
+                            packaged to maintain its nutritional value and shelf life.
+                        </p>
+                        <p>
+                            As one of India’s trusted merchant exporters, <b>Duago Foods Pvt Ltd</b> is dedicated to
+                            offering exceptional products backed by dependable service. Whether it’s bulk
+                            volumes or customized orders, we’re equipped to meet global demands with
+                            unmatched efficiency.
+                        </p>
+                        <!-- <a href="about.html" class="theme-btn my-2">About Us<i
                                             class="fas fa-long-arrow-alt-right"></i></a> -->
                     </div>
 
@@ -553,13 +579,15 @@
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
+                            data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="icon-box ">
                                     <img src="assets/additionalAssets/buffalo.png" alt="">
                                 </div>
                                 <h3 style="font-size: 21px;"><a href="Buffalo-meat.html">Buffalo Meat & Offals</a></h3>
-                                <p>Duago Foods Pvt Ltd, based in Hyderabad, India, is one of the most trusted names in frozen buffalo meat exports</p>
+                                <p>Duago Foods Pvt Ltd, based in Hyderabad, India, is one of the most trusted names in
+                                    frozen buffalo meat exports</p>
                                 <div class="btn-box">
                                     <a href="Buffalo-meat.html" class="theme-btn">Read More</a>
                                 </div>
@@ -567,30 +595,34 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="300ms"
+                            data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="icon-box1">
                                     <!-- <i class="flaticon-hang"></i> -->
-                                      <img src="assets/additionalAssets/goat-icon.png" alt="">
+                                    <img src="assets/additionalAssets/goat-icon.png" alt="">
                                 </div>
                                 <h3 style="font-size: 21px;"><a href="sheep-goat-meat.html">Sheep & Goat Meat</a></h3>
-                                <p>Duago Foods Pvt Ltd, based in Hyderabad, is a renowned name in the export of premium Sheep & Goat Meat from India.</p>
+                                <p>Duago Foods Pvt Ltd, based in Hyderabad, is a renowned name in the export of premium
+                                    Sheep & Goat Meat from India.</p>
                                 <div class="btn-box">
                                     <a href="sheep-goat-meat.html" class="theme-btn">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="600ms"
+                            data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="icon-box">
                                     <!-- <i class="flaticon-meat-5"></i> -->
-                                      <img src="assets/additionalAssets/vegitables-icon.png" alt="">
+                                    <img src="assets/additionalAssets/vegitables-icon.png" alt="">
                                 </div>
                                 <h3 style="font-size: 21px;"><a href="#">Fruits & Vegetables</a></h3>
-                                <p>Duago Foods Pvt Ltd, based in Hyderabad, India, is one of the trusted names in the global trade of fresh Indian fruits and vegetables.</p>
+                                <p>Duago Foods Pvt Ltd, based in Hyderabad, India, is one of the trusted names in the
+                                    global trade of fresh Indian fruits and vegetables.</p>
                                 <div class="btn-box">
                                     <a href="fruits-vegetables.html" class="theme-btn">Read More</a>
                                 </div>
@@ -602,7 +634,7 @@
         </section>
         <!-- service-section end -->
 
-         <!-- service-section -->
+        <!-- service-section -->
         <section class="service-section bg-color-1">
             <div class="icon-layer" style="background-image: url(assets/images/icons/bg-icon-1.png);"></div>
             <div class="auto-container">
@@ -613,64 +645,64 @@
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                       <div class="card">
-                                        <a href="assets/DUAGO FSSAI.pdf" target="_blank">
-                                            <img src="assets/images/certificates/fssai.png" alt="">
-                                        </a>
-                                        <p>Fssai</p>
+                        <div class="card">
+                            <a href="assets/DUAGO FSSAI.pdf" target="_blank">
+                                <img src="assets/images/certificates/fssai.png" alt="">
+                            </a>
+                            <p>Fssai</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                         <div class="card">
-                                        <a href="assets/DUAGO APEDA.pdf" target="_blank">
-                                            <img src="assets/images/certificates/apeda.png" alt="">
-                                        </a>
-                                        <p>Apeda</p>
-                                    </div>
+                            <a href="assets/DUAGO APEDA.pdf" target="_blank">
+                                <img src="assets/images/certificates/apeda.png" alt="">
+                            </a>
+                            <p>Apeda</p>
+                        </div>
                     </div>
-                    
+
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                         <div class="card">
-                                        <a href="index.html">
-                                            <img src="assets/images/certificates/quality.png" alt="" style="width: fit-content;">
-                                        </a>
-                                        <p>Quality Products of India</p>
-                                    </div>
+                            <a href="index.html">
+                                <img src="assets/images/certificates/quality.png" alt="" style="width: fit-content;">
+                            </a>
+                            <p>Quality Products of India</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row clearfix my-3">
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                       <div class="card">
-                                        <a href="assets/DUAGO FSSAI.pdf" target="_blank">
-                                            <img src="assets/images/certificates/haccp-certification-service.jpg" alt="">
-                                        </a>
-                                        <p>HACCP Certificates</p>
+                        <div class="card">
+                            <a href="assets/DUAGO FSSAI.pdf" target="_blank">
+                                <img src="assets/images/certificates/haccp-certification-service.jpg" alt="">
+                            </a>
+                            <p>HACCP Certificates</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                         <div class="card">
-                                        <a href="assets/DUAGO APEDA.pdf" target="_blank">
-                                            <img src="assets/images/certificates/Halal_logo.svg" alt="">
-                                        </a>
-                                        <p>Halal</p>
-                                    </div>
+                            <a href="assets/DUAGO APEDA.pdf" target="_blank">
+                                <img src="assets/images/certificates/Halal_logo.svg" alt="">
+                            </a>
+                            <p>Halal</p>
+                        </div>
                     </div>
-                    
+
                     <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                         <div class="card">
-                                        <a href="index.html">
-                                            <img src="assets/images/certificates/rapl.jpg" alt="" style="width: fit-content;">
-                                        </a>
-                                        <p>ISO Certificate</p>
-                                    </div>
+                            <a href="index.html">
+                                <img src="assets/images/certificates/rapl.jpg" alt="" style="width: fit-content;">
+                            </a>
+                            <p>ISO Certificate</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- service-section end -->
 
-       
+
 
 
         <!-- shop-section -->
@@ -1223,14 +1255,17 @@
                         <div class="row clearfix">
                             <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                                 <div class="footer-widget logo-widget">
-                                    <figure class="footer-logo"><a href="#"><img src="assets/additionalAssets/logo.png"  alt=""></a></figure>
+                                    <figure class="footer-logo"><a href="#"><img src="assets/additionalAssets/logo.png"
+                                                alt=""></a></figure>
                                     <div class="text">
                                         <p>
-                                        <b>Duago Foods Pvt Ltd</b>, headquartered in Hyderabad, India, is a leading merchant exporter
-                                        known for delivering top-tier agri-based products across global markets. We
-                                        specialize in the export of premium-quality Buffalo Meat & Offals, Sheep & Goat Meat, Fruits & Vegetables. Our
-                                        commitment lies in supplying consistent quality, timely delivery,
-                                        and tailored solutions that meet the specific needs of each client.
+                                            <b>Duago Foods Pvt Ltd</b>, headquartered in Hyderabad, India, is a leading
+                                            merchant exporter
+                                            known for delivering top-tier agri-based products across global markets. We
+                                            specialize in the export of premium-quality Buffalo Meat & Offals, Sheep &
+                                            Goat Meat, Fruits & Vegetables. Our
+                                            commitment lies in supplying consistent quality, timely delivery,
+                                            and tailored solutions that meet the specific needs of each client.
                                         </p>
                                     </div>
                                 </div>
@@ -1243,19 +1278,19 @@
                                             <p>Call Us</p>
                                             <h5><a href="ph:+919030327350">+91 9030327350</a></h5>
                                         </li>
-                                          <li>
+                                        <li>
                                             <i class="flaticon-envelope"></i>
                                             <p>Email</p>
                                             <h5><a href="mailto:duagofoods@gmail.com">duagofoods@gmail.com</a></h5>
-                                         </li>
+                                        </li>
                                         <li>
                                             <i class="flaticon-maps-and-flags"></i>
                                             <p>Address</p>
                                             <h5> 1-4-27/41, Padmashali Colony,<br />
-                                Musheerabad, Hyderabad-20. T.S. INDIA</h5>
+                                                Musheerabad, Hyderabad-20. T.S. INDIA</h5>
                                         </li>
                                     </ul>
-                                    <ul class="social-links clearfix"> 
+                                    <ul class="social-links clearfix">
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
@@ -1266,81 +1301,83 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                                 <div class="footer-widget newsletter-widget">
-                                     <form class="contact-form" id="contactForm" onsubmit="return validateForm()">
-                                    <h2>Get In Touch</h2>
+                                    <form class="contact-form" id="contactForm" onsubmit="return validateForm()">
+                                        <h2>Get In Touch</h2>
 
-                                    <input type="text" id="name" placeholder="Name" />
-                                    <span id="nameError" class="error"></span>
+                                        <input type="text" id="name" placeholder="Name" />
+                                        <span id="nameError" class="error"></span>
 
-                                    <input type="email" id="email" placeholder="Email" />
-                                    <span id="emailError" class="error"></span>
+                                        <input type="email" id="email" placeholder="Email" />
+                                        <span id="emailError" class="error"></span>
 
-                                    <input type="text" id="phone" placeholder="Phone" />
-                                    <span id="phoneError" class="error"></span>
+                                        <input type="text" id="phone" placeholder="Phone" />
+                                        <span id="phoneError" class="error"></span>
 
-                                    <textarea id="message" placeholder="Message"></textarea>
-                                    <span id="messageError" class="error"></span>
+                                        <textarea id="message" placeholder="Message"></textarea>
+                                        <span id="messageError" class="error"></span>
 
-                                  
-                                    <span id="captchaError" class="error"></span>
 
-                                    <button type="submit">Submit</button>
-                                </form>
-                                <script>
-                                    function validateForm() {
-                                        let valid = true;
+                                        <span id="captchaError" class="error"></span>
 
-                                        const name = document.getElementById("name").value.trim();
-                                        const email = document.getElementById("email").value.trim();
-                                        const phone = document.getElementById("phone").value.trim();
-                                        const message = document.getElementById("message").value.trim();
-                                        // const captcha = document.getElementById("captcha").checked;
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                    <script>
+                                        function validateForm() {
+                                            let valid = true;
 
-                                        // Reset errors
-                                        document.getElementById("nameError").textContent = "";
-                                        document.getElementById("emailError").textContent = "";
-                                        document.getElementById("phoneError").textContent = "";
-                                        document.getElementById("messageError").textContent = "";
-                                        // document.getElementById("captchaError").textContent = "";
+                                            const name = document.getElementById("name").value.trim();
+                                            const email = document.getElementById("email").value.trim();
+                                            const phone = document.getElementById("phone").value.trim();
+                                            const message = document.getElementById("message").value.trim();
+                                            // const captcha = document.getElementById("captcha").checked;
 
-                                        // Name validation
-                                        if (name === "") {
-                                            document.getElementById("nameError").textContent = "Name is required.";
-                                            valid = false;
+                                            // Reset errors
+                                            document.getElementById("nameError").textContent = "";
+                                            document.getElementById("emailError").textContent = "";
+                                            document.getElementById("phoneError").textContent = "";
+                                            document.getElementById("messageError").textContent = "";
+                                            // document.getElementById("captchaError").textContent = "";
+
+                                            // Name validation
+                                            if (name === "") {
+                                                document.getElementById("nameError").textContent = "Name is required.";
+                                                valid = false;
+                                            }
+
+                                            // Email validation
+                                            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                                            if (!email.match(emailPattern)) {
+                                                document.getElementById("emailError").textContent = "Valid email is required.";
+                                                valid = false;
+                                            }
+
+                                            // Phone validation
+                                            const phonePattern = /^[0-9]{10}$/;
+                                            if (!phone.match(phonePattern)) {
+                                                document.getElementById("phoneError").textContent = "Valid 10-digit phone number required.";
+                                                valid = false;
+                                            }
+
+                                            // Message validation
+                                            if (message.length < 5) {
+                                                document.getElementById("messageError").textContent = "Message should be at least 5 characters.";
+                                                valid = false;
+                                            }
+
+
+
+                                            return valid;
                                         }
-
-                                        // Email validation
-                                        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-                                        if (!email.match(emailPattern)) {
-                                            document.getElementById("emailError").textContent = "Valid email is required.";
-                                            valid = false;
-                                        }
-
-                                        // Phone validation
-                                        const phonePattern = /^[0-9]{10}$/;
-                                        if (!phone.match(phonePattern)) {
-                                            document.getElementById("phoneError").textContent = "Valid 10-digit phone number required.";
-                                            valid = false;
-                                        }
-
-                                        // Message validation
-                                        if (message.length < 5) {
-                                            document.getElementById("messageError").textContent = "Message should be at least 5 characters.";
-                                            valid = false;
-                                        }
-
-                                        
-
-                                        return valid;
-                                    }
-                                </script>
+                                    </script>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="footer-bottom clearfix">
-                    <div class="copyright pull-left"><h5>&copy;2025 CopyRight | <a href="#"> DaugoFoods</a>. All rights reserved.</h5></div>
+                    <div class="copyright pull-left">
+                        <h5>&copy;2025 CopyRight | <a href="#"> DaugoFoods</a>. All rights reserved.</h5>
+                    </div>
                     <ul class="footer-nav pull-right clearfix">
                         <li><a href="about.html">About</a></li>
                         <li><a href="Buffalo-meat.html">Products</a></li>
@@ -1351,6 +1388,11 @@
             </div>
         </footer>
         <!-- main-footer end -->
+        <div class="whatsapp-container">
+            <a style="color: #fff;" href="https://wa.me/9030327350" target="_blank" class="whatsapp-info pulse">
+                <img src="./assets/additionalAssets/whatsapp.png" alt="">
+            </a>
+        </div>
 
 
         <!--Scroll to top-->
