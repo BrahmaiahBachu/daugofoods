@@ -1043,74 +1043,103 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                                <form class="contact-form" id="contactForm" onsubmit="return validateForm()">
-                                    <h2>Get In Touch</h2>
+                                <div class="footer-widget newsletter-widget">
+                                    <!-- <form class="contact-form" id="contactForm" onsubmit="return validateForm()">
+                                        <h2>Get In Touch</h2>
 
-                                    <input type="text" id="name" placeholder="Name" />
-                                    <span id="nameError" class="error"></span>
+                                        <input type="text" id="name" placeholder="Name" />
+                                        <span id="nameError" class="error"></span>
 
-                                    <input type="email" id="email" placeholder="Email" />
-                                    <span id="emailError" class="error"></span>
+                                        <input type="email" id="email" placeholder="Email" />
+                                        <span id="emailError" class="error"></span>
 
-                                    <input type="text" id="phone" placeholder="Phone" />
-                                    <span id="phoneError" class="error"></span>
+                                        <input type="text" id="phone" placeholder="Phone" />
+                                        <span id="phoneError" class="error"></span>
 
-                                    <textarea id="message" placeholder="Message"></textarea>
-                                    <span id="messageError" class="error"></span>
+                                        <textarea id="message" placeholder="Message"></textarea>
+                                        <span id="messageError" class="error"></span>
 
-                                  
-                                    <span id="captchaError" class="error"></span>
 
-                                    <button type="submit">Submit</button>
-                                </form>
-                                <script>
-                                    function validateForm() {
-                                        let valid = true;
+                                        <span id="captchaError" class="error"></span>
 
-                                        const name = document.getElementById("name").value.trim();
-                                        const email = document.getElementById("email").value.trim();
-                                        const phone = document.getElementById("phone").value.trim();
-                                        const message = document.getElementById("message").value.trim();
-                                        // const captcha = document.getElementById("captcha").checked;
+                                        <button type="submit">Submit</button>
+                                    </form> -->
+                                    <form id="contact-form" class="contact-form" onsubmit="return validateForm()">
+  <input type="text" name="from_name" placeholder="Name" required />
+  <input type="email" name="from_email" placeholder="Email" required />
+  <input type="text" name="phone" placeholder="Phone" />
+  <textarea name="message" placeholder="Message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+ <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                                    <script>
+                                        (function () {
+                                            emailjs.init("OO5MgCdqRwgqemT8b"); // <- Step 4
+                                        })();
 
-                                        // Reset errors
-                                        document.getElementById("nameError").textContent = "";
-                                        document.getElementById("emailError").textContent = "";
-                                        document.getElementById("phoneError").textContent = "";
-                                        document.getElementById("messageError").textContent = "";
-                                        // document.getElementById("captchaError").textContent = "";
+                                        document.getElementById("contact-form").addEventListener("submit", function (e) {
+                                            e.preventDefault();
 
-                                        // Name validation
-                                        if (name === "") {
-                                            document.getElementById("nameError").textContent = "Name is required.";
-                                            valid = false;
+                                            emailjs.sendForm("service_q2n8xpt", "template_bo3qdqj", this)
+                                                .then(() => {
+                                                    alert("Message sent!");
+                                                    this.reset();
+                                                })
+                                                .catch((error) => {
+                                                    console.error("FAILED...", error);
+                                                    alert("Failed to send.");
+                                                });
+                                        });
+                                    </script>
+                                    <script>
+                                        function validateForm() {
+                                            let valid = true;
+
+                                            const name = document.getElementById("name").value.trim();
+                                            const email = document.getElementById("email").value.trim();
+                                            const phone = document.getElementById("phone").value.trim();
+                                            const message = document.getElementById("message").value.trim();
+                                            // const captcha = document.getElementById("captcha").checked;
+
+                                            // Reset errors
+                                            document.getElementById("nameError").textContent = "";
+                                            document.getElementById("emailError").textContent = "";
+                                            document.getElementById("phoneError").textContent = "";
+                                            document.getElementById("messageError").textContent = "";
+                                            // document.getElementById("captchaError").textContent = "";
+
+                                            // Name validation
+                                            if (name === "") {
+                                                document.getElementById("nameError").textContent = "Name is required.";
+                                                valid = false;
+                                            }
+
+                                            // Email validation
+                                            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                                            if (!email.match(emailPattern)) {
+                                                document.getElementById("emailError").textContent = "Valid email is required.";
+                                                valid = false;
+                                            }
+
+                                            // Phone validation
+                                            const phonePattern = /^[0-9]{10}$/;
+                                            if (!phone.match(phonePattern)) {
+                                                document.getElementById("phoneError").textContent = "Valid 10-digit phone number required.";
+                                                valid = false;
+                                            }
+
+                                            // Message validation
+                                            if (message.length < 5) {
+                                                document.getElementById("messageError").textContent = "Message should be at least 5 characters.";
+                                                valid = false;
+                                            }
+
+
+
+                                            return valid;
                                         }
-
-                                        // Email validation
-                                        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-                                        if (!email.match(emailPattern)) {
-                                            document.getElementById("emailError").textContent = "Valid email is required.";
-                                            valid = false;
-                                        }
-
-                                        // Phone validation
-                                        const phonePattern = /^[0-9]{10}$/;
-                                        if (!phone.match(phonePattern)) {
-                                            document.getElementById("phoneError").textContent = "Valid 10-digit phone number required.";
-                                            valid = false;
-                                        }
-
-                                        // Message validation
-                                        if (message.length < 5) {
-                                            document.getElementById("messageError").textContent = "Message should be at least 5 characters.";
-                                            valid = false;
-                                        }
-
-                                        
-
-                                        return valid;
-                                    }
-                                </script>
+                                    </script>
+                                </div>
                             </div>
                         </div>
                     </div>
